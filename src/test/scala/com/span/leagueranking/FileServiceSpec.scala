@@ -1,4 +1,4 @@
-package leagueranking
+package com.span.leagueranking
 
 import com.span.leagueranking.errors.filereading.FileNotFoundError
 import com.span.leagueranking.services.FileReadService

@@ -1,4 +1,4 @@
-package leagueranking
+package com.span.leagueranking
 
 import com.span.leagueranking.errors.decoder.DecoderError
 import com.span.leagueranking.models.{Game, Team}

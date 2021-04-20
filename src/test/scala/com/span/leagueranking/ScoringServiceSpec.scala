@@ -1,4 +1,4 @@
-package leagueranking
+package com.span.leagueranking
 
 import com.span.leagueranking.models.{Game, Points, Team}
 import com.span.leagueranking.services.ScoringService

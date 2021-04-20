@@ -1,4 +1,4 @@
-package leagueranking
+package com.span.leagueranking
 
 import org.scalatest.flatspec.AnyFlatSpec
 import org.scalatest.matchers.should
