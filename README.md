@@ -14,7 +14,7 @@ Provided a list of games the system will calculate the points for each team
 
 ## Sample
 ### Sample Input
-
+#### scores.txt
 ~~~~
 Lions 3, Snakes 3
 Tarantulas 1, FC Awesome 0
@@ -24,8 +24,9 @@ Lions 4, Grouches 0
 ~~~~
 
 ### Sample Output
-
+#### Console
 ~~~~
+Scores for scores.txt
 1. Tarantulas, 6 pts
 2. Lions, 5 pts
 3. FC Awesome, 1 pt

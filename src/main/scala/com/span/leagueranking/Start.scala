@@ -9,10 +9,13 @@ object Start extends App {
   val dir = s".${File.separator}scores"
 
   val files = FileUtils.getListOfFiles(dir)
-  (for {
-    file <- files
-  } yield ScoringService.scoreFile(file.getAbsolutePath)).foreach {
-    case Left(error) => println(error)
-    case Right(value) => println(Printer.buildResultText(value))
+  files.foreach { file =>
+    ScoringService.scoreFile(file.getAbsolutePath) match {
+      case Left(error) => println(error)
+      case Right(value) =>
+        println(s"Scores for ${file.getName}")
+        println(Printer.buildResultText(value))
+        println()
+    }
   }
 }
