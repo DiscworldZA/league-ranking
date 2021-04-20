@@ -32,3 +32,8 @@ Lions 4, Grouches 0
 4. Snakes, 1 pt
 5. Grouches, 0 pts
 ~~~~
+
+## Instructions
+
+1. Add score file to `scores` directory
+2. Use `sbt run` to run
