@@ -43,7 +43,7 @@ object ScoringService {
   }
 
   def sortPoints(point: List[Points]): List[Points] = {
-    point.sortBy(_.points)(Ordering.Int.reverse)
+    point.sortBy(point => (point.points, point.team.name))(Ordering.Tuple2(Ordering.Int.reverse, Ordering.String))
   }
 
 }

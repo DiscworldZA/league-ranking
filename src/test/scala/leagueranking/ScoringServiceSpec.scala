@@ -74,4 +74,18 @@ class ScoringServiceSpec extends UnitSpec {
     ScoringService.sortPoints(List(points1, points2, points3, points4)) should be(result)
   }
 
+  it should "sort equal points alphabetically" in {
+    val team1 = Team("Tarantulas")
+    val points1 = Points(team1, 1)
+    val team2 = Team("FC Awesome")
+    val points2 = Points(team2, 1)
+
+    val team3 = Team("Snakes")
+    val points3 = Points(team3, 3)
+    val team4 = Team("Grouches")
+    val points4 = Points(team4, 3)
+    val result = List(points4, points3, points2, points1)
+    ScoringService.sortPoints(List(points1, points2, points3, points4)) should be(result)
+  }
+
 }
