@@ -8,7 +8,7 @@ Provided a list of games the system will calculate the points for each team
 ## League Rules
 
 - Winning is worth 3 Points for the winning team
-- Tying is worth 1 Point for the both teams
+- Drawing is worth 1 Point for the both teams
 - Losing is worth 0 Points for the losing team
 
 
