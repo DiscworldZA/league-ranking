@@ -7,7 +7,6 @@ import java.io.File
 
 object Start extends App {
   val dir = s".${File.separator}scores"
-
   val files = FileUtils.getListOfFiles(dir)
   files.foreach { file =>
     ScoringService.scoreFile(file.getAbsolutePath) match {
